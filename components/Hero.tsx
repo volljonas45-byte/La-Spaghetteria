@@ -16,9 +16,29 @@ export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch(() => {});
-    }
+    const video = videoRef.current;
+    if (!video) return;
+
+    const tryPlay = () => {
+      video.play().catch(() => {});
+    };
+
+    // Sofort starten
+    tryPlay();
+
+    // Neustart am Ende als Fallback (falls loop-Attribut versagt)
+    video.addEventListener("ended", tryPlay);
+
+    // Neustart wenn Tab wieder aktiv wird
+    const handleVisibility = () => {
+      if (!document.hidden) tryPlay();
+    };
+    document.addEventListener("visibilitychange", handleVisibility);
+
+    return () => {
+      video.removeEventListener("ended", tryPlay);
+      document.removeEventListener("visibilitychange", handleVisibility);
+    };
   }, []);
 
   return (

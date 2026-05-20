@@ -38,7 +38,7 @@ export default function About() {
                 className="absolute inset-[-8%] w-[116%] h-[116%]"
               >
                 <Image
-                  src="/foto-innen.jpg"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/foto-innen.jpg`}
                   alt="La Spaghetteria — Innenraum"
                   fill
                   priority

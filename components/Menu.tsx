@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const categories = ["Alle", "Pizza", "Spaghetti", "Pasta", "Vorspeise"];
 
 const items = [
@@ -292,7 +294,7 @@ export default function Menu() {
                 {/* Bild */}
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={item.image}
+                    src={`${base}${item.image}`}
                     alt={item.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"

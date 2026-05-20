@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const images = [
   {
     src: "/foto-innen.jpg",
@@ -99,7 +101,7 @@ export default function Gallery() {
               className={`group relative overflow-hidden ${img.colSpan} ${img.rowSpan} ${img.aspect}`}
             >
               <Image
-                src={img.src}
+                src={`${base}${img.src}`}
                 alt={img.alt}
                 fill
                 priority={img.priority}

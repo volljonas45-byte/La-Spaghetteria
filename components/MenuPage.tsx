@@ -146,7 +146,7 @@ export default function MenuPage() {
       <header className="sticky top-0 z-40 bg-warm-black/95 backdrop-blur-md border-b border-white/6">
         <div className="container-wide flex items-center justify-between h-16">
           <Link
-            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/`}
+            href="/"
             className="flex items-center gap-2 text-cream/50 hover:text-gold transition-colors duration-300 text-[12px] tracking-[0.15em] uppercase"
           >
             <ArrowLeft size={14} />

@@ -30,7 +30,7 @@ const images = [
     priority: false,
   },
   {
-    src: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=800&q=80",
+    src: "/foto-ofen.jpg",
     alt: "Holzofenpizza im Ofen",
     colSpan: "md:col-span-1",
     rowSpan: "md:row-span-1",
@@ -38,7 +38,7 @@ const images = [
     priority: false,
   },
   {
-    src: "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=800&q=80",
+    src: "/foto-teig.jpg",
     alt: "Teig-Zubereitung",
     colSpan: "md:col-span-2",
     rowSpan: "md:row-span-1",

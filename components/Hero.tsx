@@ -52,7 +52,7 @@ export default function Hero() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          poster="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=1920&q=80"
+          poster={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero-poster.jpg`}
         >
           <source
             src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero.mp4`}

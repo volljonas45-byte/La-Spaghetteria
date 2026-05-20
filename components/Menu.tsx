@@ -16,7 +16,7 @@ const items = [
     description: "Mit Käse",
     price: "7,00",
     tag: "Klassiker",
-    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80",
+    image: "/menu/pizza-margherita.jpg",
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const items = [
     description: "Salami, Artischocken, frische Champignons, Paprika",
     price: "9,00",
     tag: null,
-    image: "https://images.unsplash.com/photo-1548369937-47519962c11a?w=600&q=80",
+    image: "/menu/pizza-quattro.jpg",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const items = [
     description: "Mit Meeresfrüchten",
     price: "9,50",
     tag: null,
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80",
+    image: "/menu/pizza-mare.jpg",
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const items = [
     description: "Spinat, Lachs, Mozzarella",
     price: "10,00",
     tag: "Empfehlung",
-    image: "https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=600&q=80",
+    image: "/menu/pizza-prosciutto.jpg",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const items = [
     description: "4 verschiedene Käsesorten",
     price: "9,00",
     tag: null,
-    image: "https://images.unsplash.com/photo-1604917877934-07d8d248d396?w=600&q=80",
+    image: "/menu/pizza-capricciosa.jpg",
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ const items = [
     description: "Gefüllt mit Vorderschinken, Salami, Artischocken",
     price: "10,00",
     tag: null,
-    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=600&q=80",
+    image: "/menu/pizza-speciale.jpg",
   },
   {
     id: 8,
@@ -86,7 +86,7 @@ const items = [
     description: "Mit Sardellen, Oliven und Kapern",
     price: "8,50",
     tag: null,
-    image: "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600&q=80",
+    image: "/menu/pizza-ofen.jpg",
   },
   // ── SPAGHETTI ───────────────────────────────────────────────────────────────
   {
@@ -97,7 +97,7 @@ const items = [
     description: "Speck, Ei und Sahnesauce",
     price: "9,00",
     tag: "Klassiker",
-    image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=600&q=80",
+    image: "/menu/pasta-pesto.jpg",
   },
   {
     id: 10,
@@ -117,7 +117,7 @@ const items = [
     description: "Vorderschinken, Champignons, Pinienkerne, Tomaten-Sahnesauce (scharf)",
     price: "8,50",
     tag: "Scharf",
-    image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&q=80",
+    image: "/menu/pasta-arrabiata.jpg",
   },
   {
     id: 12,
@@ -127,7 +127,7 @@ const items = [
     description: "Mit Meeresfrüchten",
     price: "9,00",
     tag: null,
-    image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=600&q=80",
+    image: "/menu/pasta-pomodoro.jpg",
   },
   {
     id: 13,
@@ -137,7 +137,7 @@ const items = [
     description: "Frische Champignons, Vorderschinken, Hackfleisch-Sahnesauce",
     price: "8,50",
     tag: "Empfehlung",
-    image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&q=80",
+    image: "/menu/pasta-aglio.jpg",
   },
   {
     id: 14,
@@ -147,7 +147,7 @@ const items = [
     description: "Mit Knoblauch und Öl (scharf)",
     price: "7,00",
     tag: "Scharf",
-    image: "https://images.unsplash.com/photo-1548943487-a2e4e43b4853?w=600&q=80",
+    image: "/menu/pasta-fusilli.jpg",
   },
   // ── PASTA ───────────────────────────────────────────────────────────────────
   {
@@ -158,7 +158,7 @@ const items = [
     description: "Mit Knoblauch und Tomatensauce (scharf)",
     price: "7,50",
     tag: "Scharf",
-    image: "https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=600&q=80",
+    image: "/menu/salat-misto.jpg",
   },
   {
     id: 16,
@@ -168,7 +168,7 @@ const items = [
     description: "Mit Gorgonzolasauce",
     price: "8,50",
     tag: null,
-    image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&q=80",
+    image: "/menu/salat-caprese.jpg",
   },
   {
     id: 17,
@@ -178,7 +178,7 @@ const items = [
     description: "Zucchini und Vorderschinken in Tomaten-Sahnesauce",
     price: "8,50",
     tag: null,
-    image: "https://images.unsplash.com/photo-1611270629569-8b357cb88da9?w=600&q=80",
+    image: "/menu/dessert-tiramisu.jpg",
   },
   {
     id: 18,
@@ -188,7 +188,7 @@ const items = [
     description: "Tomatensauce, Basilikum, Mozzarella",
     price: "8,50",
     tag: "Empfehlung",
-    image: "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?w=600&q=80",
+    image: "/menu/dessert-pannacotta.jpg",
   },
   // ── VORSPEISE ───────────────────────────────────────────────────────────────
   {
@@ -199,7 +199,7 @@ const items = [
     description: "Frische Tomaten, Mozzarella, Basilikum",
     price: "7,00",
     tag: null,
-    image: "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=600&q=80",
+    image: "/menu/vorspeise-minestrone.jpg",
   },
   {
     id: 20,
@@ -209,7 +209,7 @@ const items = [
     description: "Knuspriges Pizzabrot aus dem Ofen",
     price: "4,00",
     tag: null,
-    image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=600&q=80",
+    image: "/menu/vorspeise-antipasto.jpg",
   },
 ];
 

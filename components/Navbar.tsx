@@ -4,8 +4,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
+const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const navLinks = [
-  { label: "Speisekarte", href: "/speisekarte" },
+  { label: "Speisekarte", href: `${base}/speisekarte` },
   { label: "Über uns", href: "#about" },
   { label: "Galerie", href: "#gallery" },
   { label: "Kontakt", href: "#location" },

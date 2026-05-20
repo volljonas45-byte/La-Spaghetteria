@@ -140,7 +140,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="/speisekarte"
+            href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/speisekarte`}
             className="px-10 py-4 bg-pizza-red text-cream text-[12px] tracking-[0.2em] uppercase font-medium hover:bg-pizza-red-light transition-all duration-300"
           >
             Speisekarte
